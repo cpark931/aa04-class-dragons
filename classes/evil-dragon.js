@@ -23,6 +23,7 @@ class Dragon {
           return `${this.name} destroys ${this.nemesis} with fire! WHOOOSH!!!`;
       }
   }
+
   const enderDragon = new EvilDragon(
       "Ender Dragon",
       "black", [
@@ -36,4 +37,5 @@ class Dragon {
     enderDragon.dontInviteThemOverForDinner();
    // console.log(enderDragon.breathesFire());
    // console.log(enderDragon.burnsNemesis());
+   
   module.exports = EvilDragon;

@@ -15,7 +15,9 @@ class FriendlyDragon extends Dragon{
       helpsPeople(){
          return `${this.name} helps their friend ${this.friend}`
       }
+
 }
+
 const puff = new FriendlyDragon(
       "Puff",
       "green",
@@ -44,4 +46,6 @@ const puff = new FriendlyDragon(
     console.log(toothless); toothless.hasLifeGoals();
     console.log(toothless.helpsPeople());
     console.log(toothless.breathesFire());
+  
+
 module.exports = FriendlyDragon;
