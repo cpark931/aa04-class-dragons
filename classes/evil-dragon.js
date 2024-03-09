@@ -1,10 +1,5 @@
 
-class Dragon {
-      constructor(name, color) {
-          this.name = name;
-          this.color = color;
-      }
-  }
+const Dragon = require('./dragon')
 
   class EvilDragon extends Dragon {
       constructor(name, color, evilDoings, nemesis) {
@@ -19,7 +14,7 @@ class Dragon {
           });
       }
 
-      destroyNemesis() {
+      burnsNemesis() {
           return `${this.name} destroys ${this.nemesis} with fire! WHOOOSH!!!`;
       }
   }
@@ -35,7 +30,7 @@ class Dragon {
     );
     console.log(enderDragon);
     enderDragon.dontInviteThemOverForDinner();
-   // console.log(enderDragon.breathesFire());
-   // console.log(enderDragon.burnsNemesis());
-   
+   console.log(enderDragon.breathesFire());
+   console.log(enderDragon.burnsNemesis());
+
   module.exports = EvilDragon;
